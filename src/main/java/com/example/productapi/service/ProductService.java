@@ -3,6 +3,7 @@ package com.example.productapi.service;
 import com.example.productapi.model.Product;
 import com.example.productapi.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Service;
 
@@ -10,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-@Configuration
+@Configurable
 public class ProductService {
     @Autowired
     ProductRepository productRepository;
